@@ -1,0 +1,32 @@
+@app.route("/name/<name>)
+
+주소/name/ 변하는 내용
+
+
+# @app.route("/hello")
+# def hello():
+#     return "Hello, World!"
+
+# 플라스크 엔드포이트 이름 붙이기
+
+엔드 포인트란?
+요청을 처리하는 함수(요청의 종점)
+응답을 반환하는 함수(return)
+# 기본형 : app.route("/",endpoint="endpoint-name")
+
+
+# 허가할 HTTP 메서드 정하기
+# @app.route("/",methods=["GET","POST"])
+
+#주소뒤에 값을 받아 넣음
+# @app.route("/hello/<name>",
+#             methods=["GET", "POST"],
+#             endpoint="hello-endpoint")
+# def hello(name):
+#     return f"Hello, {name}!"
+
+앱 비밀번호
+qxxl hsoq ygol uefu
+
+PRG(POST REDIRECT GET) 패턴
+폼데이터를 POST하면 REDIRECT 하여 GET한 페이지를 표시함
