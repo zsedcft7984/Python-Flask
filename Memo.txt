@@ -30,3 +30,33 @@ qxxl hsoq ygol uefu
 
 PRG(POST REDIRECT GET) 패턴
 폼데이터를 POST하면 REDIRECT 하여 GET한 페이지를 표시함
+-----------------------------------------------------------------------------------------------------------
+2일차
+
+app.py꺼
+app.config["MAIL_SERVER"] = os.environ.get("MAIL_SERVER")                   #이메일 서버 호스트명
+app.config["MAIL_PORT"] = os.environ.get("MAIL_PORT")                       #이메일 서버의 포트
+app.config["MAIL_USE_TLS"] = os.environ.get("MAIL_USE_TLS")                 #TLS를 유효로 하는가
+app.config["MAIL_USERNAME"] = os.environ.get("MAIL_USERNAME")               #송신자 이메일 주소              
+app.config["MAIL_PASSWORD"] = os.environ.get("MAIL_PASSWORD")               #송신자 이메일 주소의 비밀번호
+app.config["MAIL_DEFAULT_SENDER"] = os.environ.get("MAIL_DEFAULT_SENDER")   #이메일의 송ㅈ신자명과 이메일 주소
+
+.env꺼
+MAIL_SERVER = smtp.gmail.com
+MAIL_PORT = 587
+MAIL_USE_TLS = True
+MAIL_USERNAME = [phonecp7984@gmail.com]
+MAIL_PASSWORD = [qxxl hsoq ygol uefu]
+MAIL_DEFAULT_SENDER = Flaskbook <phonecp7984@gmail.com>
+
+쿠키는 브라우저 측에 기억해둘 정보
+세션은 서버 측에 기억해 둘 정보
+둘은 대게 함께사용한다
+
+< 2장 데이터베이스를 이용한 앱 만들기 >
+
+앱 실행 : Blueprint 사용
+
+SQLAlchemy 
+ORM : 파이썬에서 재공하는 SQL문 직접작성하지 않아도 SQL문을 실행할수 있도록 해주는 파이썬 함수의 집합
+
